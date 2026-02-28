@@ -9,10 +9,7 @@ class GameState:
     delta_time: float
     event_state: events.EventState = events.EventState()
 
-def init() -> GameState:
-    pygame.init()
-    state = GameState()
-    state.screen = pygame.display.set_mode((WIDTH, HEIGHT))
-    state.delta_time = 1
-
-    return state
+    def __init__(self):
+        pygame.init()
+        self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
+        self.delta_time = 1

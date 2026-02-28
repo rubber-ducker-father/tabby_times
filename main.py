@@ -2,7 +2,7 @@ import pygame
 from src import setup
 
 def main():
-    state = setup.init()
+    state = setup.GameState()
     clock = pygame.time.Clock()
     while state.event_state.running:
         state.screen.fill("purple")
