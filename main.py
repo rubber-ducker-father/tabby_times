@@ -1,5 +1,6 @@
 import pygame
-from src import setup
+import setup
+import tiles
 
 def main():
     state = setup.GameState()
@@ -7,6 +8,7 @@ def main():
     while state.event_state.running:
         state.screen.fill("purple")
         state.event_state.poll_events()
+        tiles.render_tiles()
         pygame.display.flip()
         state.delta_time = clock.tick() / 1000
 

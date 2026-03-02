@@ -1,5 +1,5 @@
 import pygame
-from . import events
+import events
 
 WIDTH = 640
 HEIGHT = 320 
@@ -13,3 +13,4 @@ class GameState:
         pygame.init()
         self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
         self.delta_time = 1
+
